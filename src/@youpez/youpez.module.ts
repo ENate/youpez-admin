@@ -126,8 +126,8 @@ import {
   CheckmarkFilledModule,
   AppsModule,
   WatsonHealthContourFindingModule, SaveModule, WatsonHealth_3DCursorAltModule, OpenPanelRightModule,
-} from "@carbon/icons-angular"
-import {FlexLayoutModule} from '@angular/flex-layout'
+} from "@carbon/icons"
+import {FlexLayoutModule} from '@ngbracket/ngx-layout'
 
 import {ResizableModule} from 'angular-resizable-element'
 import {BemModule} from 'angular-bem'
