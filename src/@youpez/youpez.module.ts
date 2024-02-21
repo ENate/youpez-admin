@@ -401,7 +401,7 @@ const Pipes = [
     NgScrollbarModule.withConfig({
       visibility: 'hover',
     }),
-    NgxMdModule,
+    NgxMdModule.forRoot(),
     WatsonHealthContourFindingModule,
     NgxMaskModule.forRoot(),
   ],
