@@ -242,6 +242,7 @@ const CarbonModules = [
 const CarbonNewModules = [
   TagModule,
   TabsModule,
+  InputModule,
   ButtonModule,
   RadioModule,
   SelectModule,
@@ -253,7 +254,8 @@ const CarbonNewModules = [
   ComboBoxModule,
   DatePickerModule,
   SearchModuleComponent,
-  FileUploaderModule
+  FileUploaderModule,
+  ProgressIndicatorModule
 ]
 
 const CarbonIconModules = [
