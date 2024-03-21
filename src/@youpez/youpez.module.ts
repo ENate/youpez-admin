@@ -241,6 +241,8 @@ const CarbonModules = [
 
 const CarbonNewModules = [
   TagModule,
+  DialogModule,
+  TableModule,
   TabsModule,
   InputModule,
   ButtonModule,
@@ -254,6 +256,7 @@ const CarbonNewModules = [
   ComboBoxModule,
   DatePickerModule,
   SearchModuleComponent,
+  PaginationModule,
   FileUploaderModule,
   ProgressIndicatorModule
 ]
@@ -437,8 +440,7 @@ const Pipes = [
     ...Pipes,
   ],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   exports: [
     ...Components,
