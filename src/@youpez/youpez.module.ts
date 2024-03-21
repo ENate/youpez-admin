@@ -1,11 +1,11 @@
-import {NgModule} from '@angular/core'
+import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {NavigationEnd, NavigationStart, Router, RouterModule} from '@angular/router'
 import {ReactiveFormsModule} from "@angular/forms"
 import {NgxMdModule} from 'ngx-md'
-import {NgxMaskModule, IConfig} from 'ngx-mask'
+import { IConfig, NgxMaskPipe, NgxMaskDirective, provideNgxMask} from 'ngx-mask'
 
-import {NgScrollbarModule} from 'ngx-scrollbar'
+import {NG_SCROLLBAR_OPTIONS, NgScrollbarModule} from 'ngx-scrollbar'
 import {DragDropModule} from '@angular/cdk/drag-drop'
 import {A11yModule} from '@angular/cdk/a11y'
 
@@ -192,6 +192,7 @@ import {AppContentSimpleComponent} from './components/app-content/app-content-si
 import {SafePipe} from "./pipes/safe"
 import {AppLogoComponent} from './components/app-logo/app-logo.component'
 import {AppBreadcrumbComponent} from './components/app-breadcrumb/app-breadcrumb.component'
+import { AgGridModule } from '@ag-grid-community/angular'
 
 
 const MainModules = [
@@ -236,6 +237,23 @@ const CarbonModules = [
   NumberModule,
   FileUploaderModule,
   ModalModule,
+]
+
+const CarbonNewModules = [
+  TagModule,
+  TabsModule,
+  ButtonModule,
+  RadioModule,
+  SelectModule,
+  AgGridModule,
+  ToggleModule,
+  SliderModule,
+  NumberModule,
+  CheckboxModule,
+  ComboBoxModule,
+  DatePickerModule,
+  SearchModuleComponent,
+  FileUploaderModule
 ]
 
 const CarbonIconModules = [
@@ -396,28 +414,39 @@ const Pipes = [
   imports: [
     CommonModule,
     ...MainModules,
-    ...CarbonIconModules,
-    ...CarbonModules,
-    NgScrollbarModule.withConfig({
-      visibility: 'hover',
-    }),
+    ...CarbonNewModules,
+    NgScrollbarModule,
+    NgxMaskPipe,
+    NgxMaskDirective,
     NgxMdModule.forRoot(),
-    WatsonHealthContourFindingModule,
-    NgxMaskModule.forRoot(),
+    NgxMdModule.forRoot(),
+  ],
+  providers: [
+    {
+      provide: NG_SCROLLBAR_OPTIONS,
+      useValue: {
+        visibility: 'hover'
+      }
+    },
+    provideNgxMask()
   ],
   declarations: [
     ...Components,
     ...Pipes,
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+  ],
   exports: [
     ...Components,
     ...MainModules,
-    ...CarbonIconModules,
-    ...CarbonModules,
+    CarbonNewModules,
     ...Pipes,
+    NgxMaskDirective,
+    NgxMaskPipe,
     NgScrollbarModule,
     NgxMdModule,
-    NgxMaskModule,
   ]
 })
 export class YoupezModule {
