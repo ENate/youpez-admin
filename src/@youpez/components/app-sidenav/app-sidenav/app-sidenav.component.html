@@ -1,4 +1,4 @@
-<div #sideNavEl mwlResizable [resizeCursorPrecision]="15" [enableGhostResize]="true"
+<div #sideNavEl mwlResizable [enableGhostResize]="true"
   (resizeStart)="onResizeStart($event)" (resizeEnd)="onResizeEnd($event)" (resizing)="onResize($event)"
   [class]="getMainCSSclass()" [ngClass]="{
       'app-sidenav-v2--rendered': rendered,
