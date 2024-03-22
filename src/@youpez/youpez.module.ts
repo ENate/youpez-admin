@@ -257,6 +257,7 @@ const CarbonNewModules = [
   DatePickerModule,
   SearchModuleComponent,
   PaginationModule,
+  CheckboxModule,
   FileUploaderModule,
   ProgressIndicatorModule
 ]

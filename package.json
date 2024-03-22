@@ -49,7 +49,7 @@
     "ngx-mask": "^17.0.4",
     "ngx-md": "^14.0.9",
     "ngx-router-animations": "13.0.0",
-    "ngx-scrollbar": "^14.0.0-beta.0",
+    "ngx-scrollbar": "14.0.0-beta.7",
     "random-avatar-generator": "^2.0.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",

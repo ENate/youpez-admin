@@ -2,8 +2,8 @@ import {Injectable, Inject} from '@angular/core'
 import {Subscription} from "rxjs"
 import {BehaviorSubject, Subject, Observable} from 'rxjs'
 import {EventManager} from '@angular/platform-browser'
-import {MediaChange} from '@angular/flex-layout'
-import {MediaObserver} from '@angular/flex-layout'
+import {MediaChange} from '@ngbracket/ngx-layout'
+import {MediaObserver} from '@ngbracket/ngx-layout'
 import * as _ from "lodash"
 
 @Injectable()
