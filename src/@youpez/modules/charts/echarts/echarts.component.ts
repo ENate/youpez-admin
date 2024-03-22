@@ -229,7 +229,7 @@ export class EchartsComponent implements OnInit, OnDestroy, OnChanges, DoCheck, 
     }
   }
 
-  private onOptionsChange(opt: EChartsOption) {
+  private onOptionsChange(opt: any) {
     if (opt) {
       if (!this.chart) {
         this.chart = this.createChart()
