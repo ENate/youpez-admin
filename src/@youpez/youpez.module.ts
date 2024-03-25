@@ -249,6 +249,7 @@ const CarbonNewModules = [
   RadioModule,
   SelectModule,
   AgGridModule,
+  GridModule,
   ToggleModule,
   SliderModule,
   NumberModule,
