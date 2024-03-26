@@ -426,7 +426,7 @@ const Pipes = [
     NgxMaskPipe,
     NgxMaskDirective,
     NgxMdModule.forRoot(),
-    NgxMdModule.forRoot(),
+    // NgxMdModule.forRoot(),
   ],
   providers: [
     {
