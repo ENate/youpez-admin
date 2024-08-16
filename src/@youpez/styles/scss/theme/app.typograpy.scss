@@ -1,6 +1,7 @@
 //@import "carbon-components/scss/globals/scss/typography";
 //@import "carbon-components/scss/globals/scss/spacing";
 @use '@carbon/type';
+@use '@carbon/layout';
 
 
 .app-code-01 {
@@ -44,23 +45,23 @@
 }
 
 .app-expressive-heading-03 {
-  @include type.type-style("expressive-heading-03");
+  @include type.type-style("expressive-heading-02");
 }
 
 .app-expressive-heading-04 {
-  @include type.type-style("expressive-heading-04");
+  @include type.type-style("expressive-heading-02");
 }
 
 .app-expressive-heading-05 {
-  @include type.type-style("expressive-heading-05");
+  @include type.type-style("expressive-heading-02");
 }
 
 .app-expressive-heading-06 {
-  @include type.type-style("expressive-heading-06");
+  @include type.type-style("expressive-heading-02");
 }
 
 .app-expressive-paragraph-01 {
-  @include type.type-style("expressive-paragraph-01");
+  @include type.type-style("expressive-heading-02");
 }
 
 .app-quotation-01 {

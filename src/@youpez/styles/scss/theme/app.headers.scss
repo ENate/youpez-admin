@@ -51,28 +51,28 @@
     &.app-header--default {
         padding: 0.75rem 1.1rem;
 
-      .app_header__tools {
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 0.75rem;
+        .app_header__tools {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.75rem;
 
-          @extend .app-row;
-          @extend .app-row--center;
-      }
+            @extend .app-row;
+            @extend .app-row--center;
+        }
     }
 
     &.app-header--sm {
-      padding: 0.75rem 1rem;
+        padding: 0.75rem 1rem;
 
-      .app_header__tools {
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 0.5rem;
+        .app_header__tools {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.5rem;
 
-          @extend .app-row;
-          @extend .app-row--center;
+            @extend .app-row;
+            @extend .app-row--center;
         }
     }
 
@@ -88,14 +88,14 @@
             left: 10px;
             content: '';
             opacity: .5;
-          }
+        }
 
         .app_header__tools {
             position: absolute;
             top: 16px;
             right: 16px;
-          }
         }
+    }
 
     &.app-header--carbon {
         padding: 2.2rem 1.1rem 1.1rem 1.1rem;
@@ -126,9 +126,9 @@
     position: relative;
 
     .app-sidebar-toggle-btn {
-          margin-left: -0.25rem;
-          margin-right: 0.75rem;
-      }
+        margin-left: -0.25rem;
+        margin-right: 0.75rem;
+    }
 
     &.app-header-subheader--transparent {
         background-color: transparent;
@@ -136,9 +136,9 @@
 
     &.app-header-subheader--left-alt {
         padding-left: calc(1.1rem - 0.4375rem);
-      }
+    }
 
     &.app-header-subheader--right-alt {
         padding-right: calc(1.1rem - 0.4375rem);
-      }
+    }
 }

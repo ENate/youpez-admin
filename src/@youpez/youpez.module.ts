@@ -2,7 +2,7 @@ import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {NavigationEnd, NavigationStart, Router, RouterModule} from '@angular/router'
 import {ReactiveFormsModule} from "@angular/forms"
-import {NgxMdModule} from 'ngx-md'
+import { MarkdownModule } from 'ngx-markdown'
 import { IConfig, NgxMaskPipe, NgxMaskDirective, provideNgxMask} from 'ngx-mask'
 
 import {NG_SCROLLBAR_OPTIONS, NgScrollbarModule} from 'ngx-scrollbar'
@@ -425,8 +425,8 @@ const Pipes = [
     NgScrollbarModule,
     NgxMaskPipe,
     NgxMaskDirective,
-    NgxMdModule.forRoot(),
-    // NgxMdModule.forRoot(),
+    MarkdownModule.forRoot()
+    // NgxMdModule.forRoot()
   ],
   providers: [
     {
@@ -450,9 +450,9 @@ const Pipes = [
     CarbonNewModules,
     ...Pipes,
     NgxMaskDirective,
+    MarkdownModule,
     NgxMaskPipe,
     NgScrollbarModule,
-    NgxMdModule,
   ]
 })
 export class YoupezModule {
